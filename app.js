@@ -88,6 +88,7 @@ document.getElementById("play").addEventListener("click", function game() {
 
 // Move Pac-Man
 	function movePacman (e) {
+		e.preventDefault();
 		squares[pacmanCurrentIndex].classList.remove("pac-man");
 		switch(e.keyCode){
 			case 37:
